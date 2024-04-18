@@ -129,7 +129,7 @@
         }
 
         function update_info(userChoice, computerPick, resultMessage) {
-    document.querySelector('.game_info').innerHTML = `YOU PICK <img class="i1" src="/${userChoice}-emoji.png"> COMPUTER PICK <img class="i1" src="/${computerPick}-emoji.png"> ${resultMessage}`;
+    document.querySelector('.game_info').innerHTML = `YOU PICK <img class="i1" src="${userChoice}-emoji.png"> COMPUTER PICK <img class="i1" src="${computerPick}-emoji.png"> ${resultMessage}`;
 }
 
 
@@ -191,9 +191,9 @@ document.addEventListener('keydown',function(event){
 </head>
 <body>
     <p class="title">ROCK - PAPER - SCISSOR</p>
-    <button class="Rock" onclick="playGame('ROCK') "><img src="/ROCK-emoji.png"></button>
-    <button class="Paper" onclick="playGame('PAPER')"><img src="/PAPER-emoji.png"></button>
-    <button class="Scissor" onclick="playGame('SCISSOR')"><img src="/SCISSOR-emoji.png"></button>
+    <button class="Rock" onclick="playGame('ROCK') "><img src="ROCK-emoji.png"></button>
+    <button class="Paper" onclick="playGame('PAPER')"><img src="PAPER-emoji.png"></button>
+    <button class="Scissor" onclick="playGame('SCISSOR')"><img src="SCISSOR-emoji.png"></button>
     <button class="reset-score" onclick="reset_score()">RESET</button>
     <button class="auto-play" onclick="autoplay()">AUTOPLAY</button>
     <p class="game_score"></p>
